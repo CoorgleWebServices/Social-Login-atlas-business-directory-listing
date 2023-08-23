@@ -116,6 +116,7 @@ class SocialLogin extends CI_Controller
                         'email' => $google_user->getEmail(),
                         'is_verified' => 1,
                         'role_id' => 2,
+                    'wishlists' => '[]',
                     ];
                     $this->db->insert('user', $data_user);
                 }
